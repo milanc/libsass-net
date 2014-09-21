@@ -103,5 +103,15 @@ namespace LibSassNet
 
             return new CompileFileResult(context.OutputString, context.OutputSourceMap);
         }
+
+        public string Compile(string source, OutputStyle outputStyle = OutputStyle.Nested, SourceCommentsMode sourceComments = SourceCommentsMode.Default, IEnumerable<string> includePaths = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CompileFileResult CompileFile(string inputPath, OutputStyle outputStyle = OutputStyle.Nested, string sourceMapPath = null, SourceCommentsMode sourceComments = SourceCommentsMode.Default, IEnumerable<string> additionalIncludePaths = null)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
